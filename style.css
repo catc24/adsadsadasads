@@ -232,3 +232,9 @@ html, body {
   padding: 20px; /* Some padding */
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: right;
+  width: 50%;
+}
