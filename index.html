@@ -389,6 +389,13 @@ function myFunction() {
   closeButton.onclick = function() {
     document.getElementById("myPopup").style.display = "none";
   }
+	
+	window.onscroll = function() {
+  if (window.scrollY > 100) {
+    // Close the pop-up box
+    document.getElementById("myPopup").style.display = "none";
+  }
+};
 </script>
 	 
 	 
