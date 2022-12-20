@@ -320,7 +320,92 @@ function myFunction() {
    ...text...
 </div>   
    <embed src="Better not Call Saul2.mp3" loop="true" autostart="true" width="2" height="0">
+ 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 <style>
+  .popup {
+    display: none; /* Hide the pop-up box by default */
+    position: fixed; /* Position the pop-up box in a fixed location on the page */
+    z-index: 1; /* Make sure the pop-up box is displayed on top of other elements */
+    left: 0;
+    top: 0;
+    width: 100%; /* Make the pop-up box take up the full width of the page */
+    height: 100%; /* Make the pop-up box take up the full height of the page */
+    overflow: auto; /* Add scrollbars to the pop-up box if its content is too tall or wide */
+    background-color: rgb(0,0,0); /* Add a semi-transparent black background color */
+    background-color: rgba(0,0,0,0.4); /* Add a semi-transparent black background color with alpha channel */
+  }
 
+  .popup-content {
+    background-color: #fefefe; /* Add a white background color */
+    margin: 15% auto; /* Center the pop-up box */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Set the width of the pop-up box */
+  }
+
+  .close {
+    color: #aaa; /* Add a gray color to the "close" button */
+    float: right; /* Float the "close" button to the right */
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black; /* Change the color of the "close" button when the user hovers over it */
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
+
+<div id="myPopup" class="popup">
+  <!-- Pop-up box content goes here -->
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <p>Hello! This is a pop-up box.</p>
+  </div>
+	<div> 
+		<img src="logo.gif" alt="Italian Trulli" class="center">
+	</div>
+</div>
+
+<script>
+  window.onscroll = function() {
+    if (window.scrollY > 50) {
+      // Show the pop-up box
+      document.getElementById("myPopup").style.display = "block";
+    }
+  };
+
+  // Close the pop-up box when the user clicks the "close" button
+  var closeButton = document.getElementsByClassName("close")[0];
+  closeButton.onclick = function() {
+    document.getElementById("myPopup").style.display = "none";
+  }
+</script>
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
  <!--
   This script places a badge on your repl's full-browser view back to your repl's cover
   page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
